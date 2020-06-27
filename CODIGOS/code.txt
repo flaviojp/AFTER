@@ -1,0 +1,21 @@
+beginCount =thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider");
+stopCount = thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider");
+beginTime = 0; // start counting at time = 0
+countDur = 5; // count for 5 seconds
+Math.round(linear(time,beginTime,beginTime + countDur,beginCount,stopCount)) + "   Ly/S"
+
+
+
+
+beginCount =thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider");
+stopCount = thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider");
+beginTime = 0; // start counting at time = 0
+countDur = 5; // count for 5 seconds
+
+if ((thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider")) <= 80) {
+	Math.round(linear(time,beginTime,beginTime + countDur,beginCount,stopCount)) + "   Ly/S"
+}
+else {0}
+
+
+((thisComp.layer("CONTROLES DE VALORES").effect("VELOCIDADE MAX")("Slider")) - 15) * 1000 + "  Km/s"
