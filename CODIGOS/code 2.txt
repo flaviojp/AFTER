@@ -1,0 +1,2 @@
+x = effect("Slider Control")("Slider")[0].toFixed(2).toString().replace(".",",");
+x + "%"
